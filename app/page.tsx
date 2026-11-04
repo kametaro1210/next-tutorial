@@ -1,7 +1,17 @@
+"use client"
 
+import { useEffect } from "react";
 
 export default function Home() {
+  
+  useEffect(()=>{
+    window.alert("window test")
+  },[])
+  
   return (
-    <h1>Hello world</h1>
+    <div>
+      <h1>Hello world</h1>
+      <button onClick={()=>alert("Clicked")}>clickボタン</button>
+    </div>
   );
 }
